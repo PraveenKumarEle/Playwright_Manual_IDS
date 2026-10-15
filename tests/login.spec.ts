@@ -5,7 +5,6 @@ import { env } from '../config/env.js';
 test('login', async ({ page }) => {
     const loginPage = new login_Page(page);
     await loginPage.homepage_URL();
-    //await page.goto('https://demowebshop.tricentis.com/');
     await loginPage.navigate_To_Login_Page();
     await expect(await loginPage.Login_Btn()).toBeVisible();
     await loginPage.enter_Username(env.username);
