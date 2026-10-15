@@ -18,6 +18,9 @@ export class login_Page {
         this.logOutLink = this.page.getByRole('link', { name: 'Log Out' });
     }
 
+    async homepage_URL(){
+        await this.page.goto('/');
+    }
     async navigate_To_Login_Page() {
         await this.loginLink.click();
     }
