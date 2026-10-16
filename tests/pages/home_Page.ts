@@ -6,6 +6,7 @@ export class Home_Page {
     private shoppingCart_Btn: Locator;
     private search_btn: Locator;
     private popUp_Item_Added: Locator;
+    private current_url: string;
 
 
 
@@ -15,6 +16,7 @@ export class Home_Page {
         this.shoppingCart_Btn = this.page.locator('span:has-text("Shopping cart")');
         this.search_btn = this.page.getByRole('button', { name: 'Search' });
         this.popUp_Item_Added = this.page.getByText('The product has been added to your ');
+        this.current_url = this.page.url();
     }
 
 
@@ -32,5 +34,9 @@ export class Home_Page {
     }
     async popUp_Product_Add_To_Cart() {
         return this.popUp_Item_Added;
+    }
+    async get_Current_Url() {
+        console.log('Current URL : ' + this.current_url);
+        return this.current_url;
     }
 }
