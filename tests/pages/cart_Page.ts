@@ -70,7 +70,7 @@ export class Cart_Page {
                 }
             }
         }
-        await this.page.waitForTimeout(3000);
+        //await this.page.waitForTimeout(1000);
         const cartProduct = await this.page.locator('.product-name').innerText();
         if (cartProduct === search_Product) {
             console.log('Product added to cart successfully');

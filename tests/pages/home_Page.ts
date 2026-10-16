@@ -24,6 +24,7 @@ export class Home_Page {
                 
             const product = await this.page.locator('.product-item');
             const productCount = await product.count();
+            console.log(`Product count is ${productCount}`);
             for (let i = 0; i < productCount; i++) {
                 const specific_product = product.nth(i);
                 const name = await specific_product.locator('.product-title').innerText();

@@ -1,7 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { login_Page } from './pages/login_Page.js';
 import { Home_Page } from './pages/home_Page.js';
-import { Search_Page } from './pages/search_Page.js';
 import { Cart_Page } from './pages/cart_Page.js';
 import { env } from '../config/env.js';
 
