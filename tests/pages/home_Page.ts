@@ -7,6 +7,7 @@ export class Home_Page {
     private search_btn: Locator;
     private popUp_Item_Added: Locator;
     private current_url: string;
+    
 
 
 
@@ -19,6 +20,24 @@ export class Home_Page {
         this.current_url = this.page.url();
     }
 
+    async select_product_from_Homepage(select_product : string){
+                
+            const product = await this.page.locator('.product-item');
+            const productCount = await product.count();
+            for (let i = 0; i < productCount; i++) {
+                const specific_product = product.nth(i);
+                const name = await specific_product.locator('.product-title').innerText();
+                if (name === select_product) {
+                    const specific_product_button = await this.page.getByRole('button', { name: 'Add to cart' }).nth(i);
+                    //await expect(specific_product_button).toBeVisible();
+                    await specific_product_button.click();
+                    await this.page.waitForTimeout(1000);
+                    //const paragraph = page.getByText('The product has been added to your ');
+                    //await expect(paragraph).toBeVisible();
+                    break;
+                }
+            } 
+    }
 
 
     async fill_Search_Box(productname: string) {
@@ -28,7 +47,6 @@ export class Home_Page {
     async click_Search_Button() {
         await this.search_btn.click();
     }
-
     async click_Shopping_cart_btn() {
         await this.shoppingCart_Btn.click();
     }

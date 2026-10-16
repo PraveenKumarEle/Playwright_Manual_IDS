@@ -79,4 +79,20 @@ export class Cart_Page {
         }
     }
 
+    async calculate_Total_Cart_Sum(){
+            const initial_total_amount: any = await this.page.locator('.product-unit-price').textContent();
+            console.log(initial_total_amount);
+            //const qty = page.getByRole('textbox', {name:'itemquantity7149410'});
+            const qty = await this.page.locator('.qty-input');
+            await qty.clear();
+            await qty.fill('2');
+            await qty.press('Enter');
+            await this.page.waitForTimeout(3000);
+            const total_cal_amount: any = initial_total_amount * 2;
+            const cart_sum_total: any = await this.page.locator('.product-subtotal').textContent();
+            if (total_cal_amount == cart_sum_total) {
+                console.log("Cart Total: " + cart_sum_total);
+                console.log("Calculated Total: " + total_cal_amount);
+            }
+    }
 }
