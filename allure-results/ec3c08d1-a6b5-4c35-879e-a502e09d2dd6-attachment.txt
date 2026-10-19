@@ -1,0 +1,3 @@
+Product count is 2
+Product added to cart successfully
+Current URL : about:blank

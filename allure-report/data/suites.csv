@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","21057","search functionality","chromium","2026-10-19","passed","2026-10-19","","search_product.spec.ts","",""
+"","22063","Payment","chromium","2026-10-19","passed","2026-10-19","","payment.spec.ts","",""
+"","5680","login","chromium","2026-10-19","passed","2026-10-19","","login.spec.ts","",""
+"","7683","Add to cart","chromium","2026-10-19","passed","2026-10-19","","Add_to_Cart.spec.ts","",""

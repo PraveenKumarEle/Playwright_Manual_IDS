@@ -1,0 +1,51 @@
+<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="57.709542">
+<testsuite name="Add_to_Cart.spec.ts" timestamp="2026-10-19T02:23:14.728Z" hostname="chromium" tests="1" failures="0" skipped="0" time="7.683" errors="0">
+<testcase name="Add to cart" classname="Add_to_Cart.spec.ts" time="7.683">
+<system-out>
+<![CDATA[Product count is 6
+Product count is 2
+Product added to cart successfully
+
+[[ATTACHMENT|..\test-results\Add_to_Cart-Add-to-cart-chromium\test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="login.spec.ts" timestamp="2026-10-19T02:23:14.728Z" hostname="chromium" tests="1" failures="0" skipped="0" time="5.68" errors="0">
+<testcase name="login" classname="login.spec.ts" time="5.68">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\login-login-chromium\test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="payment.spec.ts" timestamp="2026-10-19T02:23:14.728Z" hostname="chromium" tests="1" failures="0" skipped="0" time="22.063" errors="0">
+<testcase name="Payment" classname="payment.spec.ts" time="22.063">
+<system-out>
+<![CDATA[Product count is 6
+Product count is 1
+Product added to cart successfully
+1590.00
+Cart Total: 3180.00
+Calculated Total: 3180
+Current URL : about:blank
+
+[[ATTACHMENT|..\test-results\payment-Payment-chromium\test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="search_product.spec.ts" timestamp="2026-10-19T02:23:14.728Z" hostname="chromium" tests="1" failures="0" skipped="0" time="21.057" errors="0">
+<testcase name="search functionality" classname="search_product.spec.ts" time="21.057">
+<system-out>
+<![CDATA[Product count is 2
+Product added to cart successfully
+Current URL : about:blank
+
+[[ATTACHMENT|..\test-results\search_product-search-functionality-chromium\test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

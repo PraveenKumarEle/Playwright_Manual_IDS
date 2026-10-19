@@ -1,0 +1,7 @@
+Product count is 6
+Product count is 1
+Product added to cart successfully
+1590.00
+Cart Total: 3180.00
+Calculated Total: 3180
+Current URL : about:blank
